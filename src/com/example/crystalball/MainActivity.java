@@ -1,11 +1,6 @@
 package com.example.crystalball;
 
 
-import android.support.v13.app.FragmentPagerAdapter;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.view.ViewPager;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.view.ViewPager;
 import android.graphics.drawable.AnimationDrawable;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
