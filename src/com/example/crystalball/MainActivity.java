@@ -1,13 +1,13 @@
 package com.example.crystalball;
 
 
+import android.app.Activity;
 import android.graphics.drawable.AnimationDrawable;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
@@ -20,7 +20,7 @@ import android.widget.Toast;
 import com.example.crystalball.ShakeDetector.OnShakeListener;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 	
 	public static final String TAG = MainActivity.class.getSimpleName();
 	
@@ -31,10 +31,10 @@ public class MainActivity extends ActionBarActivity {
 	private Sensor mAccelerometer;
 	private ShakeDetector mShakeDetector;
 	
-    
 	@Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+		
+		super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
   
@@ -63,9 +63,7 @@ public class MainActivity extends ActionBarActivity {
         
         // Learning Log Cat --- -- - - -- - - -- - -- - - -
         Log.d(TAG, "We're loggin from the onCreate() method!");
-        
-        
-        
+                    
         
     }
 	
